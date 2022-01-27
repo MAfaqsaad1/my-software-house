@@ -1,0 +1,52 @@
+:root {
+    font-size: 62.5%;
+    --primaryColor: #3fd0d4;
+    --mainWhite: #fff;
+    --offWhite: #f7f7f7;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --darkGrey: #afafaf;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 0.25rem;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    // line-height: 1.9;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    // overflow: hidden;
+}
+p {
+    opacity: 0.8;
+}
+h2 {
+    font-family: "Goldman", cursive;
+}
+.container {
+    display: grid;
+    grid-template-columns: [container-start] 1fr [center-start] repeat(
+            6,
+            [col-start] minmax(min-content, 16.66667rem) [col-end]
+        ) [center-end] 1fr [container-end];
+    grid-template-rows: min-content  repeat(9, min-content);
+}
+li {
+    list-style: none;
+     
+}
+a:link,
+a:visited {
+    text-decoration: none;
+    color: var(--color-quinary);
+    font-family: font-weight(font-weight-light);
+    font-size: font-size(font-size-small);
+    letter-spacing: 0.2rem;
+}
+i {
+    color: var(--color-blue);
+    font-size: font-size(font-size-medium);
+    
+}
+section {
+    padding: 7rem 0;
+}

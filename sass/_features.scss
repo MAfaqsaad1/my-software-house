@@ -1,0 +1,36 @@
+.feature {
+    display: grid;
+    // background-color: var(--color-primary);
+    // opacity: 0.6;
+    // display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-align: center;
+    grid-column: center-start / center-end;
+
+    place-content: center;
+
+    // height: 50vh;
+    &__content {
+        padding: 2.5rem 2rem;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: 0.5px 0.5px 10px var(--text-color);
+            transform: translateY(-1rem);
+        }
+        &-title {
+            font-size: 2rem;
+            // color: var(--color-blue);
+            margin: 1rem 0;
+        }
+        &-para {
+            font-size: 1.6rem;
+        }
+    }
+}
+// @media (max-width: 768px) {
+//     .feature {
+//         height: 70vh;
+//     }
+// }
